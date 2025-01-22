@@ -1,0 +1,28 @@
+---
+import ItemExp from "./ItemExp.astro"
+
+const Experience = [{
+    date:"AGOSTO 2024 - 2025",
+    title: "Programador Full-Stack",
+    description: 'Desarrollo integral de una plataforma web desde cero, incluyendo la migración de una base de datos integrada (BDI). Mis responsabilidades abarcan la recopilación y análisis de requerimientos funcionales, el diseño y estructuración de la base de datos, y la programación tanto del frontend como del backend y su despliege en producción.',
+    link:"https://seb.bdi.gob.mx"
+},
+{
+    date:"ENERO - JULIO 2023",
+    title: "Programador Full-Stack",
+    description: 'Desarrollo de una aplicaion de escritorio en C# y WindowsForms, para el control'+
+    ' de invetarios , facturaciones, ventas, generación de reportes, con el fin de agilizar tiempos y aumentar las ventas.',
+    link:"https://github.com/MaxOCs/Punto-de-Venta-en-.net"
+}
+]
+---
+<ol class="relative border-s border-gray-200 ml-3">
+    {
+        Experience.map(experiecia=> (
+            <li class="mb-10 ms-4">
+                <ItemExp {...experiecia}/>
+            </li>
+        ))
+    }
+   
+</ol>

@@ -1,0 +1,29 @@
+---
+
+const PROYECTOS = [{
+    title:'SEP BDI',
+    description:"Desarrollo e implementación de una Base de Datos Integrada (BDI) en un sistema web,utilizando frameworks como ReactJS para el frontend y Laravel para el backend. El proyecto incluyó la creación de CRUDs, generación de reportes, visualización de datos mediante gráficas, y la implementación de funcionesespecíficas adaptadas a los requerimientos especiales solicitados",
+    etiquetas: ["HTML","CSS","PHP","LARAVEL","REACT",'APIREST'],
+    link:"#",
+    github:"#",
+    image:"",
+
+},
+{
+    
+}
+]
+---
+
+{PROYECTOS.map(proyecto=>(
+    <im>
+        <h3>{proyecto.title}</h3>
+        <p>{proyecto.description}</p>
+        <ul>
+            <li>
+                {proyecto.etiquetas}
+            </li>
+        </ul>
+        <img src={proyecto.image} alt="Pantallas del proyecto"></img>
+    </article>
+))}
